@@ -1,3 +1,10 @@
+<script setup>
+import 'simplebar'
+import 'simplebar/dist/simplebar.css'
+
+import ResizeObserver from 'resize-observer-polyfill'
+window.ResizeObserver = ResizeObserver
+</script>
 <template>
   <aside
     id="application-sidebar-brand"
