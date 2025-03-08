@@ -10,7 +10,7 @@ const router = createRouter({
       children: [
         {
           path: "",
-          component: () => import("../views/LoginVue.vue"),
+          component: () => import("../views/Auth/LoginView.vue"),
           name: "Login",
         }
       ]
@@ -29,9 +29,14 @@ const router = createRouter({
           path: "users",
           name: "UsersList",
           component: () => import("../views/UsersList.vue"),
-        }
-      ]
-    }
+        },
+        {
+          path: "blank-page",
+          name: "BlankPage",
+          component: () => import("../views/Dashboard/BlankPage.vue"),
+        },
+      ],
+    },
   ],
 })
 
