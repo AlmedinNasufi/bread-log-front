@@ -22,8 +22,8 @@ const router = createRouter({
       children: [
         {
           path: "",
-          component: () => import("../views/DashboardBlankPage.vue"),
-          name: "DashboardBlankPage",
+          component: () => import("../views/Dashboard/DashboardPage.vue"),
+          name: "DashboardPage",
         },
         {
           path: "users",
